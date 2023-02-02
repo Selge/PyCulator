@@ -24,7 +24,7 @@ def help(message):
 
 
 @robot.callback_query_handler(func=lambda call: True)
-def callback_func(query):
+def calculate(query):
     global current_number, previous_number
     data = query.data
 
