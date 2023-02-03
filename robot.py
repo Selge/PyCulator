@@ -22,6 +22,11 @@ def help(message):
     robot.send_message(message.chat.id, kb.help_message)
 
 
+@robot.message_handler(func=lambda message: True)
+def reply(message):
+        robot.reply_to(message, 'Please, use the input functions!')
+
+
 @robot.callback_query_handler(func=lambda call: True)
 def calculate(query):
     global current_number, previous_number
