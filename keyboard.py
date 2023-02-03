@@ -1,6 +1,4 @@
 import telebot
-from telebot import types
-import emoji
 
 
 numpanel = telebot.types.InlineKeyboardMarkup()
